@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Anastasia Shchepkina](https://up.htmlacademy.ru/adaptive/27/user/2175287).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев] (https://htmlacademy.ru/profile/id198751).
 
 ---
 
