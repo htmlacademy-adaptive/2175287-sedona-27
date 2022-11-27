@@ -33,11 +33,10 @@
     </header>
 
     <main class="form-container">
-      <h1 class="visually-hidden">Отзывы о Седоне</h1>
-      <section class="hero-banner">
-        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+      <h1 class="visually-hidden">Формы отзыва о Седоне</h1>
+      <div class="hero-banner">
         <img class="banner__image mobile-size" src="./img/sedona-title.svg" alt="Sedona." width="229" height="39">
-      </section>
+      </div>
 
       <section class="form">
         <div class="form__wrapper">
@@ -47,37 +46,33 @@
           </div>
           <form class="" action="https://echo.htmlacademy.ru/" method="get">
 
-            <div class="form__introduce">
-              <h2 class="header__title">Представьтесь:</h2>
-              <div class="introduce__wrapper">
-                <div class="introduce__form introduce-form--name">
-                  <label class="introduce__label" for="input-name">Имя&#42;:</label>
-                  <input class="introduce__input" type="text" id="input-name" name="first-name" placeholder="Пётр" required>
-                </div>
-                <div class="introduce__form introduce-form--surname">
-                  <label class="introduce_label" for="input-surname">Фамилия&#42;:</label>
-                  <input class="introduce__input" type="text" id="input-surname" name="surname" placeholder="Пустота" required>
-                </div>
-                <div class="introduce__form introduce-form--middle-name">
-                  <label class="introduce__label" for="input-middle-name">Отчество:</label>
-                  <input class="introduce__input" type="text" id="input-middle-name" name="middle-name" placeholder="Викторович">
-                </div>
+            <fieldset class="form__introduce">
+              <legend class="header__title">Представьтесь:</legend>
+              <div class="introduce__form introduce-form--name">
+                <label class="introduce__label" for="input-name">Имя&#42;:</label>
+                <input class="introduce__input" type="text" id="input-name" name="first-name" placeholder="Пётр" required>
               </div>
-            </div>
+              <div class="introduce__form introduce-form--surname">
+                <label class="introduce_label" for="input-surname">Фамилия&#42;:</label>
+                <input class="introduce__input" type="text" id="input-surname" name="surname" placeholder="Пустота" required>
+              </div>
+              <div class="introduce__form introduce-form--middle-name">
+                <label class="introduce__label" for="input-middle-name">Отчество:</label>
+                <input class="introduce__input" type="text" id="input-middle-name" name="middle-name" placeholder="Викторович">
+              </div>
+            </fieldset>
 
-            <div class="form__contact">
-              <h2 class="header__title">Контактная информация:</h2>
-              <div class="contact__wrapper">
-                <div class="contacts__form contacts__form--telephone">
-                  <label class="contact__label">Контактный телефон&#42;:</label>
-                  <input class="contact__input" type="tel" id="input-telephone" name="telephone" placeholder="Введите телефон" required>
-                </div>
-                <div class="contacts__form contacts__form--email">
-                  <label class="contact__label">Электронная почта&#42;:</label>
-                  <input class="contact__input" type="email" id="input-email" name="email" placeholder="Введите e-mail" required>
-                </div>
+            <fieldset class="form__contact">
+              <legend class="header__title">Контактная информация:</legend>
+              <div class="contacts__form contacts__form--telephone">
+                <label class="contact__label">Контактный телефон&#42;:</label>
+                <input class="contact__input" type="tel" id="input-telephone" name="telephone" placeholder="Введите телефон" required>
               </div>
-            </div>
+              <div class="contacts__form contacts__form--email">
+                <label class="contact__label">Электронная почта&#42;:</label>
+                <input class="contact__input" type="email" id="input-email" name="email" placeholder="Введите e-mail" required>
+              </div>
+            </fieldset>
 
             <fieldset class="form__opinion">
               <legend class="header__title">Ваше общее впечатление:</legend>
@@ -139,10 +134,11 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="form__describe-emotions">
-              <label class="header__title">Опишите свои эмоции:</label>
+
+            <fieldset class="form__describe-emotions">
+              <legend class="header__title">Опишите свои эмоции:</legend>
               <textarea class="comment" placeholder="Опишите подробно все свои восторги" name="comment" rows="4" cols="50"></textarea>
-            </div>
+            </fieldset>
             <button class="button form-button" type="submit">Применить</button>
             <p class="form__legend">* — обязательные поля</p>
           </form>
