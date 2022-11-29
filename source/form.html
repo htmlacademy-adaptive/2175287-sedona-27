@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Форма отзыва о Седоне</title>
   </head>
-  <body class="page-body page__body--catalog">
-    <header class="catalog-header">
+  <body class="page-body page-body--form">
+    <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Седона.">
       </a>
@@ -15,18 +15,18 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="catalog.html">Фото и видео</a>
             </li>
           </ul>
           <ul class="main-nav__list">
-            <li class="site-list__item site-list__item--current">
+            <li class="main-nav__item main-nav__item--current">
               <a href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="https://htmlacademy.ru/">HTML academy</a>
             </li>
           </ul>
@@ -37,50 +37,50 @@
     <main class="form-container">
       <h1 class="visually-hidden">Формы отзыва о Седоне</h1>
       <div class="hero-banner">
-        <img class="banner__image mobile-size" src="./img/sedona-title.svg" alt="Sedona." width="229" height="39">
+        <img class="hero-banner__image mobile-size" src="./img/sedona-title.svg" alt="Sedona." width="229" height="39">
       </div>
 
       <section class="form">
         <div class="form__wrapper">
-          <div class="form__header">
+          <div class="form__header header">
             <h2 class="header__title">Оставьте свой отзыв</h2>
             <p class="header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="" action="https://echo.htmlacademy.ru/" method="get">
 
-            <fieldset class="form__information form__information--introduce">
+            <fieldset class="form__information information header">
               <legend class="header__title">Представьтесь:</legend>
-              <ul class="information__list information__list--introduce">
-                <li class="information__item introduce-item--name">
+              <ul class="information__list">
+                <li class="information__item information__item--name">
                   <label class="information__label" for="input-name">Имя&#42;:</label>
                   <input class="information__input" type="text" id="input-name" name="first-name" placeholder="Пётр" required>
                 </li>
-                <li class="information__item introduce-item--surname">
+                <li class="information__item information__item--surname">
                   <label class="information__label" for="input-surname">Фамилия&#42;:</label>
                   <input class="information__input" type="text" id="input-surname" name="surname" placeholder="Пустота" required>
                 </li>
-                <li class="information__item introduce-item--middle-name">
+                <li class="information__item information__item--middle-name">
                   <label class="information__label" for="input-middle-name">Отчество:</label>
                   <input class="information__input" type="text" id="input-middle-name" name="middle-name" placeholder="Викторович">
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__information form__information--contact">
+            <fieldset class="form__information information header">
               <legend class="header__title">Контактная информация:</legend>
-              <ul class="information__list information__list--contact">
-                <li class="information__item contacts__item--telephone">
+              <ul class="information__list contact">
+                <li class="information__item information__item--telephone">
                   <label class="information__label">Контактный телефон&#42;:</label>
                   <input class="information__input" type="tel" id="input-telephone" name="telephone" placeholder="Введите телефон" required>
                 </li>
-                <li class="information__item contacts__item--email">
+                <li class="information__item information__item--email">
                   <label class="information__label">Электронная почта&#42;:</label>
                   <input class="information__input" type="email" id="input-email" name="email" placeholder="Введите e-mail" required>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__opinion">
+            <fieldset class="form__opinion opinion header">
               <legend class="header__title">Ваше общее впечатление:</legend>
               <ul class="opinion__list">
                 <li class="opinion__item">
@@ -107,7 +107,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__visited-places">
+            <fieldset class="form__visited-places visited-places header">
               <legend class="header__title">Посещенные достопримечательности:</legend>
               <ul class="visited-places__list">
                 <li class="visited-places__item">
@@ -141,7 +141,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__describe-emotions">
+            <fieldset class="form__describe-emotions header">
               <legend class="header__title">Опишите свои эмоции:</legend>
               <textarea class="comment" placeholder="Опишите подробно все свои восторги" name="comment" rows="4" cols="50"></textarea>
             </fieldset>
@@ -171,8 +171,8 @@
           </ul>
         </div>
       </div>
-      <div class="main-footer__copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/">
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
           <img class="copyright__logo" src="./img/htmlacademy.svg" alt="Логотип htmlacademy" width="27" height="34">
         </a>

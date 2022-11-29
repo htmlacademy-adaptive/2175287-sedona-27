@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Галерея Седоны</title>
   </head>
-  <body class="page-body page__body--catalog">
-    <header class="catalog-header">
+  <body class="page-body page-body--catalog">
+    <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Седона.">
       </a>
@@ -15,18 +15,18 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--current">
+            <li class="main-nav__item main-nav__item--current">
               <a href="catalog.html">Фото и видео</a>
             </li>
           </ul>
           <ul class="main-nav__list">
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="https://htmlacademy.ru/">HTML academy</a>
             </li>
           </ul>
@@ -37,18 +37,18 @@
     <main class="catalog-container">
       <h1 class="visually-hidden">Фотогаллерея Седоны</h1>
       <div class="hero-banner">
-        <img class="banner__image mobile-size" src="./img/sedona-title.svg" alt="Sedona." width="229" height="39">
+        <img class="hero-banner__image mobile-size" src="./img/sedona-title.svg" alt="Sedona." width="229" height="39">
       </div>
 
       <section class="catalog">
         <div class="catalog__wrapper">
-          <div class="catalog__header">
+          <div class="catalog__header header">
             <h2 class="header__title">Фото и видео</h2>
             <p class="header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img class="catalog__image" src="./img/popular-spaces.jpeg" width="280" height="280" alt="#">
+              <img class="catalog__image image" src="./img/popular-spaces.jpeg" width="280" height="280" alt="#">
               <p class="image__title">Неродные просторы</p>
               <p class="image__author">Автор фото: Борис</p>
               <button class="button button--liked" type="button">Like
@@ -56,21 +56,21 @@
               <span class="count-liked">1350</span>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="./img/native-flora.jpeg" width="280" height="280" alt="#">
+              <img class="catalog__image image" src="./img/native-flora.jpeg" width="280" height="280" alt="#">
               <p class="image__title">Местная растительность</p>
               <p class="image__author">Автор фото: Сергей</p>
               <button class="button button--liked" type="button">Like</button>
               <span class="count-liked">143</span>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="./img/road-to-north.jpeg" width="280" height="280" alt="#">
+              <img class="catalog__image image" src="./img/road-to-north.jpeg" width="280" height="280" alt="#">
               <p class="image__title">Дорога на север</p>
               <p class="image__author">Автор фото: Петр</p>
               <button class="button button--liked" type="button">Like</button>
               <span class="count-liked">96</span>
             </li>
             <li class="catalog__item">
-              <img class="catalog__image" src="./img/devil-bridge.jpeg" width="280" height="280" alt="#">
+              <img class="catalog__image image" src="./img/devil-bridge.jpeg" width="280" height="280" alt="#">
               <p class="image__title">Мост дьявола</p>
               <p class="image__author">Автор фото: Антон</p>
               <button class="button button--liked" type="button">Like</button>
@@ -107,8 +107,8 @@
           </ul>
         </div>
       </div>
-      <div class="main-footer__copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/">
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
           <img class="copyright__logo" src="./img/htmlacademy.svg" alt="Логотип htmlacademy" width="27" height="34">
         </a>
