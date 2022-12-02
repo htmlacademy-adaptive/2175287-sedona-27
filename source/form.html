@@ -2,30 +2,33 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Форма отзыва о Седоне</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body class="page-body page-body--form">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="img/logo.svg" width="185" height="96" alt="Седона.">
+      <a href="index.html">
+        <img class="main-header__logo" src="img/logo.svg" width="185" height="96" alt="Седона.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">HTML academy</a>
+            <a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
           </li>
         </ul>
       </nav>
@@ -40,46 +43,46 @@
       <section class="form">
         <div class="form__wrapper">
           <div class="form__header header">
-            <h2 class="header__title">Оставьте свой отзыв</h2>
-            <p class="header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <h2 class="header__title title">Оставьте свой отзыв</h2>
+            <p class="header__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="form__information information header">
-              <legend class="header__title">Представьтесь:</legend>
-              <ul class="information__list">
+              <legend class="header__title title">Представьтесь:</legend>
+              <ul class="information__list list">
                 <li class="information__item information__item--name">
-                  <label class="information__label" for="input-name">Имя&#42;:</label>
+                  <label class="information__label description" for="input-name">Имя&#42;:</label>
                   <input class="information__input" type="text" id="input-name" name="first-name" placeholder="Пётр" required>
                 </li>
                 <li class="information__item information__item--surname">
-                  <label class="information__label" for="input-surname">Фамилия&#42;:</label>
+                  <label class="information__label description" for="input-surname">Фамилия&#42;:</label>
                   <input class="information__input" type="text" id="input-surname" name="surname" placeholder="Пустота" required>
                 </li>
                 <li class="information__item information__item--middle-name">
-                  <label class="information__label" for="input-middle-name">Отчество:</label>
+                  <label class="information__label description" for="input-middle-name">Отчество:</label>
                   <input class="information__input" type="text" id="input-middle-name" name="middle-name" placeholder="Викторович">
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form__information information header">
-              <legend class="header__title">Контактная информация:</legend>
-              <ul class="information__list contact">
+              <legend class="header__title title">Контактная информация:</legend>
+              <ul class="information__list list contact">
                 <li class="information__item information__item--telephone">
-                  <label class="information__label">Контактный телефон&#42;:</label>
+                  <label class="information__label description">Контактный телефон&#42;:</label>
                   <input class="information__input" type="tel" id="input-telephone" name="telephone" placeholder="Введите телефон" required>
                 </li>
                 <li class="information__item information__item--email">
-                  <label class="information__label">Электронная почта&#42;:</label>
+                  <label class="information__label description">Электронная почта&#42;:</label>
                   <input class="information__input" type="email" id="input-email" name="email" placeholder="Введите e-mail" required>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form__opinion opinion header">
-              <legend class="header__title">Ваше общее впечатление:</legend>
-              <ul class="opinion__list">
+              <legend class="header__title title">Ваше общее впечатление:</legend>
+              <ul class="opinion__list list">
                 <li class="opinion__item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="radio" name="opinion" value="positive" required checked>
@@ -105,8 +108,8 @@
             </fieldset>
 
             <fieldset class="form__visited-places visited-places header">
-              <legend class="header__title">Посещенные достопримечательности:</legend>
-              <ul class="visited-places__list">
+              <legend class="header__title title">Посещенные достопримечательности:</legend>
+              <ul class="visited-places__list list">
                 <li class="visited-places__item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="checkbox" name="Мост Дьявола" checked>
@@ -149,13 +152,13 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__hashtag">
           <a href="#">&#35;VisitSedona</a>
         </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
+        <div class="page-footer__social social">
+          <ul class="social__list list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы во ВКонтакте</a>
             </li>
@@ -168,12 +171,28 @@
           </ul>
         </div>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
           <img class="copyright__logo" src="./img/htmlacademy.svg" alt="Логотип htmlacademy" width="27" height="34">
         </a>
       </div>
     </footer>
+
+    <div class="modal modal-failure modal-failure--close">
+      <div class="modal__content">
+        <p class="modal__title">Что-то пошло не так!</p>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <button class="button button--modal-failure" type="button">Ок</button>
+    </div>
+
+    <div class="modal modal-success modal-success--close">
+      <div class="modal__content">
+        <p class="modal__title">Ваш отзыв отправлен!</p>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <button class="button button--modal-success" type="button">Закрыть окно</button>
+    </div>
   </body>
 </html>
