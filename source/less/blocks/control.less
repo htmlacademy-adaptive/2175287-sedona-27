@@ -1,8 +1,22 @@
+.control {
+  height: 46px;
+  display: block;
+}
+
 .control__list {
   .list();
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  padding-bottom: 24px;
+}
+.control__item {
+  position: relative;
+  display: block;
+  padding-left: 82px;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+.control__item:nth-last-child(1) {
+  padding-bottom: 0;
 }
 
 .control-label {
@@ -13,4 +27,16 @@
   padding-bottom: 10px;
 }
 
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
 
+.control-input[type="checkbox"] + .control-mark {
+  border-radius: 4px;
+}

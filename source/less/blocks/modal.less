@@ -1,7 +1,50 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__content--failure {
+  padding: 45px 42px 35px 41px;
+}
+
+.modal__content {
+  position: relative;
+  margin: auto;
+  width: 237px;
+  background-color: @white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
 .modal__title {
   .title();
 }
 
+.modal__title--failure {
+  padding-bottom: 25px;
+}
+
 .modal__description {
   .description();
+}
+
+.modal__description--failure {
+  width: 237px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+}
+
+.button--modal-failure {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  width: 180px;
+  display: block;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 14px;
 }
