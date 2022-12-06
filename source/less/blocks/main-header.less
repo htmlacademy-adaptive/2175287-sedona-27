@@ -1,8 +1,26 @@
+// .main-header {
+//   background-color: @white;
+// }
+
+// .main-header__link {
+//   display: flex;
+//   justify-content: center;
+// }
+
 .main-header {
+  display: flex;
+  flex-direction: column;
   background-color: @white;
+  color: @black;
 }
 
 .main-header__logo {
-  display: block;
-  margin: 0 auto;
+  height: 96px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    order: 3;
+  }
+}
+
