@@ -1,9 +1,11 @@
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 23px 18px 46px 65px;
-  background-color: @white;
+@media (max-width:@mobile-width-only) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 23px 18px 46px 65px;
+    background-color: @white;
+  }
 }
 
 .features__title {
@@ -20,6 +22,7 @@
 
 @media (min-width: @tablet-width) {
   .features {
+    grid-row: 1/-1;
     padding: 0;
     margin: o auto;
   }

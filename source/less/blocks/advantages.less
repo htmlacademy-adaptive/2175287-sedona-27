@@ -66,18 +66,16 @@
 
 @media (min-width: @tablet-width) {
   .advantages__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
   }
 
   .advantages__item {
     width: 256px;
   }
 
-  .advantages__item--highlight {
-    display: flex;
-    width: 100%;
-
+  .advantages__card {
+    grid-row: 1/-1;
   }
 
   .advantages__card--secondary {
