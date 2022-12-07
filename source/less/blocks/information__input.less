@@ -1,6 +1,5 @@
 .information__input {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   padding: 16px;
@@ -8,4 +7,10 @@
   border: none;
   width: 248px;
   margin: 0 auto;
+}
+
+@media (min-width: @desktop-width) {
+  .information__input {
+    width: calc(430px - 32px);
+  }
 }

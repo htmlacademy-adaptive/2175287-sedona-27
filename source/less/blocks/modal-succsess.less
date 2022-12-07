@@ -3,13 +3,13 @@
 }
 
 .modal__description--success {
-  width: 237px;
   margin: 0 auto;
   padding-bottom: 65px;
 }
 
 .modal__content--success {
-  padding: 45px 42px 35px 41px;
+  width: 244px;
+  padding: 44px 39px 35px 37px;
 }
 
 .button--modal-success {
@@ -19,8 +19,18 @@
   font-weight: 700;
   display: block;
   text-align: center;
+  width: 280px;
   padding-top: 18px;
   padding-right: 62px;
   padding-bottom: 14px;
   padding-left: 60px;
+  margin: 0 auto;
+}
+
+@media (min-width:@tablet-width) {
+  .modal__content--success {
+    width: 444px;
+    padding: 58px 99px 35px 97px;
+
+  }
 }

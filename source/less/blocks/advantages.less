@@ -11,11 +11,8 @@
   .title();
 }
 
-.advantages__description {
-  .description();
-}
-
-.advantages__number {
+.advantages__description,
+.advantages__number  {
   .description();
 }
 
@@ -65,4 +62,40 @@
 
 .advantages__card--secondary {
   padding: 37px 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 256px;
+  }
+
+  .advantages__item--highlight {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .advantages__card--secondary {
+    order: 2;
+  }
+
+  .advantages__item--variant {
+    width: 256px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    width: 400px;
+  }
+
+  .advantages__item--highlight {
+    width: 100%;
+  }
 }

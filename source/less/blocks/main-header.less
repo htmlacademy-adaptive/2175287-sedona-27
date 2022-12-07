@@ -1,26 +1,14 @@
-// .main-header {
-//   background-color: @white;
-// }
-
-// .main-header__link {
-//   display: flex;
-//   justify-content: center;
-// }
-
 .main-header {
   display: flex;
   flex-direction: column;
   background-color: @white;
   color: @black;
+  min-height: 56px;
 }
 
 .main-header__logo {
+  position: absolute;
   height: 96px;
+  left: calc(50% - 92px);
+  cursor: pointer;
 }
-
-@media (min-width: @tablet-width) {
-  .main-header__logo {
-    order: 3;
-  }
-}
-

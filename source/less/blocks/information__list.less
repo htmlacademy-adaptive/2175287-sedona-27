@@ -5,7 +5,18 @@
   flex-direction: column;
 }
 
-.information__legend {
-  padding-top: 24px;
-  padding-bottom: 21px;
+@media (min-width:@tablet-width) {
+  .information__list {
+    width: 280px;
+  }
+
+  .information__list.contact {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information__list {
+    width: 430px;
+  }
 }

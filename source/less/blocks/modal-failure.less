@@ -3,12 +3,12 @@
 }
 
 .modal__description--failure {
-  width: 237px;
   margin: 0 auto;
   padding-bottom: 28px;
 }
 
 .modal__content--failure {
+  width: 237px;
   padding: 45px 42px 35px 41px;
 }
 
@@ -22,4 +22,18 @@
   text-align: center;
   padding-top: 18px;
   padding-bottom: 14px;
+}
+
+@media (min-width:@tablet-width) {
+  .modal__content--failure {
+    width: 307px;
+    padding: 50px 47px 35px 46px;
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__content--failure {
+    padding: 48px, 47px, 35px, 46px;
+  }
 }
