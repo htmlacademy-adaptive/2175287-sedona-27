@@ -29,3 +29,22 @@
   font-weight: 400;
   padding-bottom: 23px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    min-width: 648px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 976px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin: 0 auto;
+  }
+}

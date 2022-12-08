@@ -20,3 +20,21 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  .video {
+    width: 445px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 800px;
+  }
+
+  .video__title,
+  .video__description {
+    width: 445px;
+    margin: 0 auto;
+  }
+}

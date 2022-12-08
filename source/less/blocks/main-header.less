@@ -1,8 +1,14 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
   background-color: @white;
+  color: @black;
+  min-height: 56px;
 }
 
 .main-header__logo {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  height: 96px;
+  left: calc(50% - 92px);
+  cursor: pointer;
 }

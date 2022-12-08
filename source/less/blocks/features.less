@@ -1,8 +1,4 @@
 .features {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 23px 18px 46px 65px;
   background-color: @white;
 }
 
@@ -16,4 +12,19 @@
 .features__description {
   .description();
   text-align: start;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+  }
+
+
+  .features__title,
+  .features__description {
+    text-align: center;
+  }
 }
