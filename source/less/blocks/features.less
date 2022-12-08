@@ -1,5 +1,12 @@
 .features {
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+  }
 }
 
 .features__title {
@@ -7,24 +14,17 @@
   text-align: start;
   padding-top: 8px;
   padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
 .features__description {
   .description();
   text-align: start;
-}
 
-@media (min-width: @tablet-width) {
-  .features {
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 1/-1;
-  }
-
-
-  .features__title,
-  .features__description {
+  @media (min-width: @tablet-width) {
     text-align: center;
   }
 }

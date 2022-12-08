@@ -1,11 +1,35 @@
-@media (min-width: @tablet-width) {
-  .visited-places {
+.visited-places {
+  @media (min-width: @tablet-width) {
     width: 480px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .visited-places {
-    width: 960px;
+.visited-places__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    gap: 16px 32px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.visited-places__item {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    width: 178px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 124px;
   }
 }
