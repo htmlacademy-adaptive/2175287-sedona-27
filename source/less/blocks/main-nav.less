@@ -13,9 +13,9 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -23,7 +23,6 @@
     width: 1200px;
   }
 }
-
 
 .main-nav__list a {
   display: block;
@@ -44,7 +43,7 @@
   @media (min-width: @tablet-width) {
     background-color: @white;
     color: @black;
-    width: 153px;
+    min-width: 153px;
     font-size: 14px;
     line-height: 21px;
     padding-top: 18px;
@@ -53,9 +52,29 @@
   }
 }
 
+.main-nav__item a[href] {
+  @media (min-width: @tablet-width) {
+    &:hover {
+      color: @base-color;
+
+      background-color: @white;
+    }
+
+    &:active {
+      color: @black;
+
+      background-color: @white;
+      opacity: 0.3;
+    }
+  }
+}
+
 .main-nav__item {
   @media (min-width: @tablet-width) {
-    background-color: @white;
+
+    &--current a {
+      color: #766357;
+    }
   }
 
   &:nth-child(2) {
