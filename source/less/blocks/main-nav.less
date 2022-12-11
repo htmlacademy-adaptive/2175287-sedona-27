@@ -2,11 +2,28 @@
   min-width: 320px;
   background-color: @base-color;
   position: absolute;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .main-nav__list {
   .list();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
+
 
 .main-nav__list a {
   display: block;
@@ -23,25 +40,35 @@
   background-color: @base-color;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    color: @black;
+    width: 153px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    border: none;
+  }
 }
 
-.main-nav__wrapper {
+.main-nav__item {
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    min-width: 768px;
-    margin: 0 auto;
+    background-color: @white;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 1200px;
+  &:nth-child(2) {
+    @media (min-width: @tablet-width) {
+      margin-right: 153px;
+    }
   }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 11px;
-  right: 17px;
+  right: 14px;
   z-index: 12;
   display: block;
   width: 32px;
@@ -88,6 +115,7 @@
   top: 17px;
   right: 10px;
   left: auto;
+  background-color: @base-color;
 
   &::after {
     content: "";
@@ -102,11 +130,11 @@
   }
 
   &:hover::after {
-    opacity: 60%; //Как сделать именно иконку с опасити???
+    opacity: 60%;
   }
 
   &:active::after {
-    opacity: 30%; //Как сделать именно иконку с опасити???
+    opacity: 30%;
   }
 }
 
