@@ -1,5 +1,10 @@
 .features {
   background-color: @white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+  padding: 23px 18px 46px;
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
@@ -9,8 +14,23 @@
   }
 }
 
+.features__item {
+  @media (max-width: @mobile-width-only) {
+    width: 237px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 157px 33px 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 69px 50px;
+  }
+}
+
 .features__title {
   .title();
+  margin: 0;
   text-align: start;
   padding-top: 8px;
   padding-bottom: 16px;
@@ -22,6 +42,7 @@
 
 .features__description {
   .description();
+  margin: 0;
   text-align: start;
 
   @media (min-width: @tablet-width) {
