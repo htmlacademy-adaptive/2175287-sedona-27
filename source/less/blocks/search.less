@@ -24,10 +24,9 @@
   }
 }
 
-.search__description {
-  .description();
+.search__text {
+  .text();
   margin: 0 auto;
-  width: 288px;
   margin-bottom: 30px;
   padding-left: 18px;
   padding-right: 18px;
@@ -46,6 +45,19 @@
   padding-top: 15px;
   padding-bottom: 13px;
   margin-bottom: 49px;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    background-color: @active-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 
   @media (min-width: @tablet-width) {
     width: 458px;
