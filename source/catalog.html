@@ -14,12 +14,12 @@
         <a class="main-header__logo" href="index.html">
           <img src="img/logo.svg" width="185" height="96" alt="Седона.">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list list">
+            <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
@@ -44,9 +44,9 @@
         </div>
 
         <section class="catalog">
-          <div class="catalog__header header">
-            <h2 class="catalog__intro header__title">Фото и видео</h2>
-            <p class="header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <div class="catalog__header">
+            <h2 class="catalog__slogan">Фото и видео</h2>
+            <p class="catalog__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--first">
@@ -125,13 +125,22 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы во ВКонтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы во ВКонтакте</span>
+                <img src="./img/vk-icon.svg" width="48" height="48" alt="ВКонтакте.">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+                <img src="./img/telegram-icon.svg" width="48" height="48" alt="Телеграм.">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Youtube</span>
+                <img src="./img/youtube-icon.svg" width="48" height="48" alt="Youtube.">
+              </a>
             </li>
           </ul>
         </div>
@@ -143,5 +152,6 @@
         </div>
       </footer>
     </div>
+  <script src="./js/script.js"></script>
   </body>
 </html>
