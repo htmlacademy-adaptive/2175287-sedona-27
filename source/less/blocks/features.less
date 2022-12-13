@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
+    padding: 0;
   }
 }
 
@@ -20,11 +21,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 157px 33px 61px;
+    padding: 158px 25px 61px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 69px 50px;
+    padding: 170px 50px 70px;
   }
 }
 
@@ -36,7 +37,11 @@
   padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 1.24;
     text-align: center;
+    padding-top: 0;
+    margin-bottom: 9px;
   }
 }
 

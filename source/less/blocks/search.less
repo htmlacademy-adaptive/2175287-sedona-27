@@ -1,7 +1,11 @@
 .search {
+  padding-left: 18px;
+  padding-right: 18px;
+
   @media (min-width: @tablet-width) {
-    width: 435px;
+    width: 458px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -15,12 +19,14 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 0.87;
     margin-top: 61px;
-    margin-bottom: 41px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 46px;
+    margin-bottom: 33px;
   }
 }
 
@@ -28,18 +34,24 @@
   .text();
   margin: 0 auto;
   margin-bottom: 30px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
 
   @media (min-width: @tablet-width) {
     width: 435px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
   }
 }
 
 .search-button {
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
-  width: 284px;
+  font-weight: 700;
+  min-width: 284px;
   display: block;
   text-align: center;
   padding-top: 15px;
@@ -63,4 +75,14 @@
     width: 458px;
     margin-bottom: 58px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.search-map-frame {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 31px;
 }
