@@ -23,14 +23,32 @@
   color: @text-color;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 16px;
 }
 
-.count-liked {
+.catalog__credits-like {
   font-size: 14px;
   line-height: 21px;
   color: @black;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  padding-left: 37px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/like-icon.svg);
+    fill: @black;
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+
+    @media (min-width: @tablet-width) {
+    top: -9px;
+    left: 0px;
+    }
+  }
 }

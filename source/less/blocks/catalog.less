@@ -1,5 +1,9 @@
 .catalog {
-  width: calc(320 / 280);
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .catalog__header {
@@ -29,7 +33,6 @@
   @media (min-width: @tablet-width) {
     display: grid;
     width: 648px;
-    padding: 0 60px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
   }
