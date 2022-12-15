@@ -1,26 +1,43 @@
-.control {
+.control__group {
   height: 46px;
   display: block;
 }
 
 .control__list {
   .list();
-  padding-bottom: 24px;
+}
+
+.control__list--opinion {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .control__item {
   position: relative;
   display: block;
-  padding-left: 82px;
+  padding-left: 62px;
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
 .control__item:nth-last-child(1) {
   padding-bottom: 0;
 }
 
-.control-label {
+.control__item--opinion {
+  @media (min-width: @tablet-width) {
+    width: 234px;
+  }
+}
+
+.control__label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -28,16 +45,16 @@
   padding-bottom: 10px;
 }
 
-.control-mark {
+.control__mark {
   position: absolute;
-  top: 0;
-  left: 20px;
+  top: -11px;
+  left: 0;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 50%;
 }
 
-.control-input[type="checkbox"] + .control-mark {
+.control__input[type="checkbox"] + .control__mark {
   border-radius: 4px;
 }
