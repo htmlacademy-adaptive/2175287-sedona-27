@@ -47,10 +47,6 @@
   }
 }
 
-.information__list--phone {
-  // padding-left: 37px;
-}
-
 .information__list.contact {
   @media (min-width: @tablet-width) {
     margin-left: auto;
@@ -106,6 +102,18 @@
   border: none;
   width: 248px;
   margin: 0 auto;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: @white;
+    border: 4px solid #e5e5e5;
+    box-sizing: border-box;
+    padding: 12px 64px 12px 12px;
+    width: 100%;
+  }
 
   @media (min-width: @desktop-width) {
     width: calc(430px - 32px);
