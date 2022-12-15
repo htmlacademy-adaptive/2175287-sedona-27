@@ -1,8 +1,3 @@
-.control__group {
-  height: 46px;
-  display: block;
-}
-
 .control__list {
   .list();
 }
@@ -38,19 +33,15 @@
 }
 
 .control__item {
-  position: relative;
-  display: block;
-  padding-left: 62px;
-  margin: 0 auto;
-  padding-bottom: 16px;
+  margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
 .control__item:nth-last-child(1) {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .control__item--opinion {
@@ -69,6 +60,14 @@
     width: 124px;
   }
 }
+
+.control__group {
+  position: relative;
+  // min-height: 46px;
+  display: block;
+  padding-left: 62px;
+}
+
 
 .control__label {
   font-size: 18px;
