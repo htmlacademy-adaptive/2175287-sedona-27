@@ -12,6 +12,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 40px;
   }
 }
 
@@ -22,6 +24,10 @@
     padding-top: 37px;
     padding-bottom: 7px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .form-group--textarea {
@@ -31,6 +37,10 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 29px;
   }
 }
 
@@ -44,11 +54,21 @@
 }
 
 .form-group__title--intro {
-  padding-left: 42px;
+  @media (min-width: @tablet-width) {
+    padding-left: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 64px;
+  }
 }
 
 .form-group__title--opinion {
   padding-top: 25px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+  }
 }
 
 .form-group__title--visited-places {
@@ -56,6 +76,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 25px 172px 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 376px 32px;
   }
 }
 
@@ -104,9 +128,10 @@
   text-transform: uppercase;
   text-align: right;
   padding-top: 3px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
-    padding-top: 8px;
+    padding-top: 23px;
   }
 }

@@ -27,7 +27,7 @@
   padding: 20px 20px 34px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    // padding: 0;
     padding-top: 26px;
   }
 }
@@ -48,7 +48,7 @@
 }
 
 .information__list--phone {
-  padding-left: 37px;
+  // padding-left: 37px;
 }
 
 .information__list.contact {
@@ -75,6 +75,18 @@
   padding-bottom: 39px;
 }
 
+.information__item--phone,
+.information__item--email {
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 28px;
+  }
+}
+
+
 .information__label {
   display: block;
   padding-left: 16px;
@@ -97,5 +109,12 @@
 
   @media (min-width: @desktop-width) {
     width: calc(430px - 32px);
+  }
+}
+
+.information__input--contacts {
+  @media (min-width: @desktop-width) {
+    width: calc(430px - 58px);
+    margin: 0;
   }
 }
