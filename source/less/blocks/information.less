@@ -27,8 +27,11 @@
   padding: 20px 20px 34px;
 
   @media (min-width: @tablet-width) {
-    // padding: 0;
     padding-top: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 27px 18px 34px;
   }
 }
 
@@ -78,7 +81,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 28px;
+    padding-left: 47px;
   }
 }
 
@@ -112,7 +115,10 @@
     border: 4px solid #e5e5e5;
     box-sizing: border-box;
     padding: 12px 64px 12px 12px;
-    width: 100%;
+
+    @media(min-width: @desktop-width) {
+      width: 402px;
+    }
   }
 
   @media (min-width: @desktop-width) {

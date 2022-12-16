@@ -12,6 +12,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 857px;
+    margin: 0 auto;
   }
 }
 
@@ -46,14 +48,15 @@
 
 .control__item--opinion {
   @media (min-width: @tablet-width) {
-    width: 234px;
+    width: 250px;
+    margin-bottom: 20px;
   }
 }
 
 .control__item--visited-places {
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
-    width: 178px;
+    padding-bottom: 20px;
+    width: 185px;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,8 +76,9 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  padding-top: 10px;
   padding-bottom: 10px;
+  display: block;
+  width: 200px;
 }
 
 .control__mark {
@@ -85,8 +89,42 @@
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 50%;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .control__input[type="checkbox"] + .control__mark {
   border-radius: 4px;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 11px);
+  width: 22px;
+  height: 16px;
+  content: "";
+  background-image: url("../img/tick.svg.svg");
+
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  content: "";
+  background-color: @text-color;
+
+  &:active {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
 }

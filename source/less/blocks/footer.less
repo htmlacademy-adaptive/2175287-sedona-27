@@ -25,6 +25,27 @@
   margin-bottom: 21px;
 }
 
+.social__link {
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    background-color: @active-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__link--telegram::before {
+  content: "";
+  background-image: url(/source/img/telegram-icon.svg);
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
 .footer__hashtag {
   margin: 0;
   margin-bottom: 30px;
