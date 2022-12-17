@@ -103,12 +103,12 @@
   border-radius: 4px;
 }
 
-.control__group:active .control__input[type="checkbox"]:checked+.control__mark::before {
+.control__group:active .control__input[type="checkbox"]:checked + .control__mark::before {
   opacity: 0.3;
 }
 
 .control__input[type="checkbox"]:checked {
-  &+.control__mark::before {
+  & + .control__mark::before {
     position: absolute;
     top: calc(50% - 8px);
     left: calc(50% - 11px);
@@ -123,13 +123,13 @@
   }
 }
 
-.control__group:active .control__input[type="radio"]:checked+.control__mark::before {
+.control__group:active .control__input[type="radio"]:checked + .control__mark::before {
   opacity: 0.3;
 }
 
 
 .control__input[type="radio"]:checked {
-  &+.control__mark::before {
+  & + .control__mark::before {
     position: absolute;
     top: calc(50% - 8px);
     left: calc(50% - 8px);
