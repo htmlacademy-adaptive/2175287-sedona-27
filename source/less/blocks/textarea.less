@@ -6,7 +6,7 @@
 
 .textarea__comment {
   width: 248px;
-  height: 120px;
+  height: 118px;
   background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -14,19 +14,17 @@
   font-weight: 700;
   padding: 16px;
   border: none;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 56px;
-}
+  outline: none;
 
-@media (min-width: @tablet-width) {
-  .textarea__comment {
+  @media (min-width: @tablet-width) {
     width: 616px;
+    height: 128px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .textarea__comment {
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 736px;
   }
 }
