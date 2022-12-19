@@ -1,23 +1,27 @@
 .hero-banner {
-  background-image: url("../img/hero-banner.jpeg");
+  background-image: url("../img/hero-banner/back-mobile.jpg");
   background-color: @current-color;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero-banner-mobile@2x.jpg");
+    background-image: url("../img/hero-banner/back-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
+    background-image: url("../img/hero-banner/back-tablet.jpg");
+
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-banner-tablet@2x.jpg");
+      background-image: url("../img/hero-banner/back-tablet@2x.jpg");
     }
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/hero-banner/back-desktop.jpg");
+
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-banner-desktop@2x.jpg");
+      background-image: url("../img/hero-banner/back-desktop@2x.jpg");
     }
   }
 }
