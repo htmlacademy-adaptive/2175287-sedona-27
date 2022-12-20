@@ -84,11 +84,12 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
-
+    padding-left: 20px;
     background-color: #f2f2f2;
+    padding-right: 20px;
+    padding-top: 21px;
 
-    &:nth-child(3) {
+    &:nth-last-child(2) {
       background-color: #eaeaea;
     }
   }
@@ -100,13 +101,14 @@
     width: 100%;
     height: 80px;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .catalog__credits-wrapper {
   @media (min-width: @desktop-width) {
     padding-left: 20px;
+    padding-top: 23px;
   }
 }
 
@@ -143,6 +145,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 10px;
   padding-left: 37px;
   position: relative;
 
@@ -150,20 +153,30 @@
     content: "";
     width: 30px;
     height: 30px;
-    background-image: url("../img/like-icon.svg");
-    fill: @black;
+    background-image: url("../img/icons/like-icon.svg");
+    fill: #000000;
+    opacity: 0.3;
     position: absolute;
     bottom: 0;
     left: -5px;
 
     @media (min-width: @tablet-width) {
-      top: -9px;
+      top: 0;
       left: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/icons/like-icon-white.svg");
+      background-repeat: no-repeat;
+      opacity: 1;
+      top: 28px;
+      left: 5px;
     }
   }
 
   @media (min-width: @desktop-width) {
     padding-right: 20px;
+    padding-top: 32px;
     color: @white;
   }
 }
