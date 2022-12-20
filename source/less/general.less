@@ -22,4 +22,17 @@ img {
   margin: 0 auto;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    background-color: @active-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

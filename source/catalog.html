@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Галерея Седоны</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body page__body--catalog">
@@ -39,9 +42,10 @@
       </header>
 
       <main class="page-content">
-        <section class="hero-banner">
+        <section class="hero-banner hero-banner--small">
           <h1 class="visually-hidden">Фотогаллерея Седоны</h1>
-          <img class="hero-banner__image hero-banner__image--small" src="./img/sedona-title.svg" alt="Sedona." width="229" height="39">
+            <img class="hero-banner__image hero-banner__image--small"
+            src="./img/hero-title.svg" alt="Sedona." width="229" height="39">
         </section>
 
         <section class="page-intro page-intro--catalog">
@@ -53,7 +57,11 @@
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--first">
               <a class="catalog__img">
-                <img class="catalog__image" src="./img/popular-spaces.jpeg" width="280" height="280" alt="#">
+                <picture>
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/nonnative-spaces-desktop.jpg 1x, ./img/catalog/nonnative-spaces-desktop@2x.jpg 2x" width="1200" height="400">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/nonnative-spaces-tablet.jpg 1x, ./img/catalog/nonnative-spaces-tablet@2x.jpg 2x" width="648" height="400">
+                  <img class="catalog__image" src="./img/catalog/nonnative-spaces-mobile.jpg" srcset="./img/catalog/nonnative-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                </picture>
               </a>
               <div class="catalog__credits">
                 <div class="catalog__credits-wrapper">
@@ -68,7 +76,11 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__img">
-                <img class="catalog__image" src="./img/native-flora.jpeg" width="280" height="280" alt="#">
+                <picture>
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/native-flora-desktop.jpg 1x, ./img/catalog/native-flora-desktop@2x.jpg 2x" width="400" height="267">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/native-flora-tablet.jpg 1x, ./img/catalog/native-flora-tablet@2x.jpg 2x" width="324" height="267">
+                  <img class="catalog__image" src="./img/catalog/native-flora-mobile.jpg" srcset="./img/catalog/native-flora-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                </picture>
               </a>
               <div class="catalog__credits">
                 <div class="catalog__credits-wrapper">
@@ -83,7 +95,11 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__img">
-                <img class="catalog__image" src="./img/road-to-north.jpeg" width="280" height="280" alt="#">
+                <picture>
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/road-to-north-desktop.jpg 1x, ./img/catalog/road-to-north-desktop@2x.jpg 2x" width="400" height="267">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/road-to-north-tablet.jpg 1x, ./img/catalog/road-to-north-tablet@2x.jpg 2x" width="324" height="267">
+                  <img class="catalog__image" src="./img/catalog/road-to-north-mobile.jpg" srcset="./img/catalog/road-to-north-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                </picture>
               </a>
               <div class="catalog__credits">
                 <div class="catalog__credits-wrapper">
@@ -98,7 +114,11 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__img">
-                <img class="catalog__image" src="./img/devil-bridge.jpeg" width="280" height="280" alt="#">
+                <picture>
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/devil-bridge-desktop.jpg 1x, ./img/catalog/devil-bridge-desktop@2x.jpg 2x" width="400" height="267">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/devil-bridge-tablet.jpg 1x, ./img/catalog/devil-bridge-tablet@2x.jpg 2x" width="324" height="267">
+                  <img class="catalog__image" src="./img/catalog/devil-bridge-mobile.jpg" srcset="./img/catalog/devil-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                </picture>
               </a>
               <div class="catalog__credits">
                 <div class="catalog__credits-wrapper">
@@ -115,7 +135,11 @@
           <div class="video">
             <h2 class="video__title">Все еще сомневаетесь?</h2>
             <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="video__img" src="./img/image-video.jpg" width="280" height="177" alt="#">
+            <picture>
+              <source class="video__img" media="(min-width: 1200px)" srcset="./img/catalog/video-pic-desktop.jpg 1x, ./img/catalog/video-pic-desktop@2x.jpg 2x" width="800" height="500">
+              <source class="video__img" media="(min-width:768px)" srcset="./img/catalog/video-pic-tablet.jpg 1x, ./img/catalog/video-pic-tablet@2x.jpg 2x" width="648" height="500">
+              <img class="video__img" src="./img/catalog/video-pic-mobile.jpg" srcset="./img/catalog/video-pic-mobile@2x.jpg 2x" width="280" height="177" alt="#">
+            </picture>
           </div>
         </section>
       </main>
@@ -146,7 +170,7 @@
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано
-            <img class="copyright__logo" src="./img/htmlacademy.svg" alt="Логотип htmlacademy" width="27" height="34">
+            <img class="copyright__logo" src="./img/icons/htmlacademy.svg" alt="Логотип htmlacademy" width="27" height="34">
           </a>
         </div>
       </footer>
