@@ -8,7 +8,7 @@
 }
 
 .advantages__card {
-  padding: 33px 18px 40px;
+  padding: 70px 18px 40px;
 
   @media (min-width: @tablet-width) {
     padding: 42px 33px;
@@ -50,12 +50,23 @@
 
   &--variant {
     background-color: #eeeeee;
-    padding: 24px 18px;
-    border-bottom: 1px solid #d6d6d6;
+    padding: 25px 18px;
+    position: relative;
 
-    &:nth-last-child(1) {
-      border: none;
-      padding-bottom: 29px;
+    &:not(:nth-last-child(1))::after {
+      content: "";
+      position: absolute;
+      width: 284px;
+      height: 1px;
+      bottom: 0;
+      left: 18px;
+      background-color: #d6d6d6;
+    }
+
+    @media (max-width: @mobile-width-only) {
+      &:nth-last-child(1) {
+        padding-bottom: 29px;
+      }
     }
 
     @media (min-width: @tablet-width) {
@@ -63,7 +74,24 @@
         display: none;
       }
 
-      padding: 52px 33px 52px;
+      padding: 48px 40px 52px;
+
+      &:not(:nth-last-child(1))::after {
+        display: none;
+      }
+    }
+  }
+
+  &--four {
+    @media (min-width: @tablet-width) {
+      padding-top: 38px;
+    }
+  }
+
+  &--five {
+    @media (min-width: @tablet-width) {
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 
@@ -88,8 +116,8 @@
     @media (min-width: @desktop-width) {
       width: 80px;
       height: 80px;
-      top: 58px;
-      left: 160px;
+      top: 61px;
+      left: 159px;
     }
   }
 
@@ -107,15 +135,15 @@
     @media (min-width: @tablet-width) {
       width: 77px;
       height: 80px;
-      top: 58px;
-      left: 80px;
+      top: 42px;
+      left: 79px;
     }
 
     @media (min-width: @desktop-width) {
       width: 80px;
       height: 80px;
-      top: 58px;
-      left: 151px;
+      top: 48px;
+      left: 150px;
     }
   }
 
@@ -133,14 +161,14 @@
     @media (min-width: @tablet-width) {
       width: 77px;
       height: 80px;
-      top: 64px;
-      left: 75px;
+      top: 48px;
+      left: 74px;
     }
 
     @media (min-width: @desktop-width) {
       width: 80px;
       height: 80px;
-      top: 58px;
+      top: 46px;
       left: 142px;
     }
   }
@@ -161,12 +189,23 @@
     font-size: 21px;
     line-height: 1.24;
   }
+
+  &--five {
+    @media (min-width: @tablet-width) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
 }
 
 .advantages__number {
   .text();
   margin: 0;
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .advantages__text {
