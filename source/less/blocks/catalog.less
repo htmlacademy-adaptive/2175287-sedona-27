@@ -104,7 +104,12 @@
     padding-left: 20px;
     background-color: #f2f2f2;
     padding-right: 20px;
-    padding-top: 21px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+
+    &:nth-child(3) {
+      background-color: #e5e5e5;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -164,36 +169,16 @@
   width: 69px;
   padding-top: 12px;
 
-  // // &::before {
-  // //   content: "";
-  // //   width: 30px;
-  // //   height: 30px;
-  // //   background-image: url("../img/like-icon.svg");
-  // //   fill: #000000;
-  // //   opacity: 0.3;
-  // //   position: absolute;
-  // //   bottom: 0;
-  // //   left: -5px;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    justify-content: flex-end;
+  }
+}
 
-  //   @media (min-width: @tablet-width) {
-  //     top: 0;
-  //     left: 0;
-  //   }
-
-  //   @media (min-width: @desktop-width) {
-  //     background-image: url("../img/icons/like-icon-white.svg");
-  //     background-repeat: no-repeat;
-  //     opacity: 1;
-  //     top: 28px;
-  //     left: 5px;
-  //   }
-  // }
-
-  // @media (min-width: @desktop-width) {
-  //   padding-right: 20px;
-  //   padding-top: 32px;
-  //   color: @white;
-  // }
+.catalog__credits-like-number {
+  @media (min-width: @tablet-width) {
+    padding-left: 3px;
+  }
 }
 
 .catalog__credits-button {
@@ -212,4 +197,8 @@
     background-color: transparent;
     opacity: 0.5;
   }
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
 }
