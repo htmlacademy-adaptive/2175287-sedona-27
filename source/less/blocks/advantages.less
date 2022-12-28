@@ -80,16 +80,20 @@
         display: none;
       }
     }
+
+    @media (min-width: @desktop-width) {
+      padding: 49px 50px 52px;
+    }
   }
 
   &--four {
-    @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
       padding-top: 38px;
     }
   }
 
   &--five {
-    @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
       padding-left: 30px;
       padding-right: 30px;
     }
@@ -116,7 +120,7 @@
     @media (min-width: @desktop-width) {
       width: 80px;
       height: 80px;
-      top: 61px;
+      top: 65px;
       left: 159px;
     }
   }
@@ -142,7 +146,7 @@
     @media (min-width: @desktop-width) {
       width: 80px;
       height: 80px;
-      top: 48px;
+      top: 52px;
       left: 150px;
     }
   }
@@ -168,7 +172,7 @@
     @media (min-width: @desktop-width) {
       width: 80px;
       height: 80px;
-      top: 46px;
+      top: 50px;
       left: 142px;
     }
   }
@@ -191,10 +195,9 @@
     line-height: 1.24;
   }
 
-  &--five {
+  &--variant {
     @media (min-width: @tablet-width) {
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 3px;
     }
   }
 }
