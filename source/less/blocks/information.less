@@ -5,6 +5,17 @@
     margin: 0 auto;
     width: 648px;
     padding-top: 4px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 338px;
+      top: 7%;
+      left: 50%;
+      background-color: #dbdbdb;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -40,6 +51,7 @@
 
   @media (min-width: @tablet-width) {
     width: 280px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
