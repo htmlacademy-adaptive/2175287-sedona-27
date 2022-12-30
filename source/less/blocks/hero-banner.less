@@ -1,67 +1,41 @@
 .hero-banner {
   position: relative;
-  background-image: url("../img/hero-banner/back-mobile.jpg");
   background-color: @current-color;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: bottom;
   padding-top: 90px;
   padding-right: 19px;
   padding-left: 19px;
   padding-bottom: 85px;
+  background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-mobile.jpg");
 
   @media (max-width: @mobile-width-only) {
     margin-top: 56px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/intro-triangle.svg");
-    background-repeat: no-repeat;
-    bottom: -1px;
-    width: 100%;
-    height: 57px;
-    left: 0;
-  }
-
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero-banner/back-mobile@2x.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/hero-banner/back-tablet.jpg");
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/intro-triangle-tablet.svg");
-      background-repeat: no-repeat;
-      bottom: -1px;
-      width: 100%;
-      height: 57px;
-    }
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 77px 154px 91px;
+    background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-banner/back-tablet@2x.jpg");
+      background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-tablet@2x.jpg");
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/hero-banner/back-desktop.jpg");
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/intro-triangle-desktop.svg");
-      background-repeat: no-repeat;
-      bottom: 0;
-      width: 100%;
-      height: 57px;
-    }
+    padding: 78px 370px 90px;
+    background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-banner/back-desktop@2x.jpg");
+      background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-desktop@2x.jpg");
     }
   }
 }
