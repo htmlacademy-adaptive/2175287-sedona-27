@@ -5,6 +5,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+  padding-top: 90px;
+  padding-right: 19px;
+  padding-left: 19px;
+  padding-bottom: 85px;
 
   @media (max-width: @mobile-width-only) {
     margin-top: 56px;
@@ -13,11 +17,12 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../img/intro-triangle-mobile.svg");
+    background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
     bottom: -1px;
     width: 100%;
     height: 57px;
+    left: 0;
   }
 
   @media (min-resolution: 2dppx) {
@@ -62,35 +67,20 @@
 }
 
 .hero-banner__image {
-  padding-top: 90px;
-  padding-bottom: 85px;
   display: block;
-  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    padding-top: 78px;
-    padding-bottom: 91px;
     width: 460px;
     height: 350px;
   }
 }
 
 .hero-banner__image--small {
-  padding-top: 52px;
-  padding-bottom: 67px;
   display: block;
-  margin: 0 auto;
   background-position: 50% -230px;
 
   @media (min-width: @tablet-width) {
     width: 460px;
     height: 80px;
-    padding-top: 94px;
-    padding-bottom: 116px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 101px;
-    padding-bottom: 120px;
   }
 }
