@@ -51,6 +51,10 @@
 .page-intro--form {
   padding: 35px 20px 28px;
 
+  @media (max-width: @mobile-width-only) {
+    border: 1px solid #e5e5e5;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 59px 166px 79px;
   }
@@ -58,8 +62,8 @@
   @media (min-width: @desktop-width) {
     padding-top: 108px;
     padding-bottom: 42px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 360px;
+    padding-right: 360px;
   }
 }
 
@@ -92,7 +96,7 @@
 }
 
 .page-intro__header--form {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
