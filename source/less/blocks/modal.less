@@ -1,5 +1,4 @@
 .modal-container {
-  // display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 
   &:not(.active) {
     display: none;
@@ -27,11 +27,11 @@
 
     @media (min-width: @tablet-width) {
       width: 307px;
-      padding: 50px 47px 35px 46px;
+      padding: 50px 47px 49px 46px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 48px, 47px, 35px, 46px;
+      padding: 48px 47px 49px 46px;
     }
   }
 
@@ -46,7 +46,11 @@
 
 .modal__wrapper {
   &--success {
-    padding: 45px 45px 46px 45px;
+    padding: 39px 50px 51px 46px;
+
+    @media (min-width: @tablet-width) {
+      padding: 45px 50px 51px 46px;
+    }
   }
 
   &--button {
@@ -63,12 +67,28 @@
   .title();
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   &--failure {
     padding-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 43px;
+      padding-right: 45px;
+      padding-bottom: 22px;
+    }
   }
 
   &--success {
-    padding-bottom: 24px;
+    padding-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 23px;
+    }
   }
 }
 
@@ -79,6 +99,10 @@
   &--failure {
     margin: 0 auto;
     padding-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 47px;
+    }
   }
 
   &--success {
@@ -88,17 +112,32 @@
 
 .button {
   &--modal-failure {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
     width: 76%;
     padding-top: 18px;
     padding-bottom: 14px;
+
+    @media (min-width: @tablet-width) {
+      width: 89%;
+      font-size: 21px;
+    }
   }
 
   &--modal-success {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
     width: 100%;
     padding-top: 18px;
     padding-right: 56px;
     padding-bottom: 14px;
     padding-left: 54px;
     margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 }
