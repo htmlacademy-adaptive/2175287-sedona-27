@@ -4,54 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Галерея Седоны</title>
+    <title>Фото-галерея города Седона</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
-    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png"> <!-- 180×180 -->
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/wwof2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/wwof2" as="font" crossorigin="anonymous">
   </head>
 
   <body class="page__body page__body--catalog">
     <div class="page-container">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logo.svg" width="185" height="96" alt="Седона.">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="#" aria-current="page">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+            </li>
+          </ul>
         </nav>
+        <div class="hero-banner hero-banner--small">
+          <img class="hero-banner__image hero-banner__image--small" src="img/hero-title.svg" alt="Sedona." width="229" height="39">
+        </div>
       </header>
 
       <main class="page-content">
-        <section class="hero-banner hero-banner--small">
-          <h1 class="visually-hidden">Фотогаллерея Седоны</h1>
-            <img class="hero-banner__image hero-banner__image--small"
-            src="./img/hero-title.svg" alt="Sedona." width="229" height="39">
-        </section>
-
-        <section class="page-intro page-intro--catalog">
-          <h2 class="page-intro__header page-intro__header--catalog">Фото и видео</h2>
+        <header class="page-intro page-intro--catalog">
+          <h1 class="page-intro__header page-intro__header--catalog">Фото и видео</h1>
           <p class="page-intro__text page-intro__text--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </section>
+        </header>
 
         <section class="catalog">
           <h2 class="visually-hidden">Галерея</h2>
@@ -59,9 +56,12 @@
             <li class="catalog__item catalog__item--first">
               <a class="catalog__img">
                 <picture>
-                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/nonnative-spaces-desktop.jpg 1x, ./img/catalog/nonnative-spaces-desktop@2x.jpg 2x" width="1200" height="400">
-                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/nonnative-spaces-tablet.jpg 1x, ./img/catalog/nonnative-spaces-tablet@2x.jpg 2x" width="648" height="400">
-                  <img class="catalog__image" src="./img/catalog/nonnative-spaces-mobile.jpg" srcset="./img/catalog/nonnative-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/nonnative-spaces-desktop.webp 1x, img/catalog/nonnative-spaces-desktop@2x.webp 2x" loading="lazy" width="1200" height="400">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 768px)" srcset="img/catalog/nonnative-spaces-tablet.webp 1x, img/catalog/nonnative-spaces-tablet@2x.webp 2x" loading="lazy" width="648" height="400">
+                  <source class="catalog__image" type="image/webp" srcset="img/catalog/nonnative-spaces-mobile.webp 1x, img/catalog/nonnative-spaces-mobile@2x.webp 2x" loading="lazy" width="280" height="280">
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="img/catalog/nonnative-spaces-desktop.jpg 1x, img/catalog/nonnative-spaces-desktop@2x.jpg 2x" loading="lazy" width="1200" height="400">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="img/catalog/nonnative-spaces-tablet.jpg 1x, img/catalog/nonnative-spaces-tablet@2x.jpg 2x" loading="lazy" width="648" height="400">
+                  <img class="catalog__image" src="img/catalog/nonnative-spaces-mobile.jpg" srcset="img/catalog/nonnative-spaces-mobile@2x.jpg 2x" loading="lazy" width="280" height="280" alt="#">
                 </picture>
               </a>
               <div class="catalog__credits">
@@ -83,9 +83,12 @@
             <li class="catalog__item">
               <a class="catalog__img">
                 <picture>
-                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/native-flora-desktop.jpg 1x, ./img/catalog/native-flora-desktop@2x.jpg 2x" width="400" height="267">
-                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/native-flora-tablet.jpg 1x, ./img/catalog/native-flora-tablet@2x.jpg 2x" width="324" height="267">
-                  <img class="catalog__image" src="./img/catalog/native-flora-mobile.jpg" srcset="./img/catalog/native-flora-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/native-flora-desktop.webp 1x, img/catalog/native-flora-desktop@2x.webp 2x" loading="lazy" width="400" height="267">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 768px)" srcset="img/catalog/native-flora-tablet.webp 1x, img/catalog/native-flora-tablet@2x.webp 2x" loading="lazy" width="324" height="267">
+                  <source class="catalog__image" type="image/webp" srcset="img/catalog/native-flora-mobile.webp 1x, img/catalog/native-flora-mobile@2x.webp 2x" loading="lazy" width="280" height="280">
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="img/catalog/native-flora-desktop.jpg 1x, img/catalog/native-flora-desktop@2x.jpg 2x" width="400" height="267">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="img/catalog/native-flora-tablet.jpg 1x, img/catalog/native-flora-tablet@2x.jpg 2x" width="324" height="267">
+                  <img class="catalog__image" src="img/catalog/native-flora-mobile.jpg" srcset="img/catalog/native-flora-mobile@2x.jpg 2x" width="280" height="280" alt="#">
                 </picture>
               </a>
               <div class="catalog__credits">
@@ -107,9 +110,12 @@
             <li class="catalog__item">
               <a class="catalog__img">
                 <picture>
-                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/road-to-north-desktop.jpg 1x, ./img/catalog/road-to-north-desktop@2x.jpg 2x" width="400" height="267">
-                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/road-to-north-tablet.jpg 1x, ./img/catalog/road-to-north-tablet@2x.jpg 2x" width="324" height="267">
-                  <img class="catalog__image" src="./img/catalog/road-to-north-mobile.jpg" srcset="./img/catalog/road-to-north-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/road-to-north-desktop.webp 1x, img/catalog/road-to-north-desktop@2x.webp 2x" loading="lazy" width="400" height="267">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 768px)" srcset="img/catalog/road-to-north-tablet.webp 1x, img/catalog/road-to-north-tablet@2x.webp 2x" loading="lazy" width="324" height="267">
+                  <source class="catalog__image" type="image/webp" srcset="img/catalog/road-to-north-mobile.webp 1x, img/catalog/road-to-north-mobile@2x.webp 2x" loading="lazy" width="280" height="280">
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="img/catalog/road-to-north-desktop.jpg 1x, img/catalog/road-to-north-desktop@2x.jpg 2x" width="400" height="267">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="img/catalog/road-to-north-tablet.jpg 1x, img/catalog/road-to-north-tablet@2x.jpg 2x" width="324" height="267">
+                  <img class="catalog__image" src="img/catalog/road-to-north-mobile.jpg" srcset="img/catalog/road-to-north-mobile@2x.jpg 2x" width="280" height="280" alt="#">
                 </picture>
               </a>
               <div class="catalog__credits">
@@ -131,9 +137,12 @@
             <li class="catalog__item">
               <a class="catalog__img">
                 <picture>
-                  <source class="catalog__image" media="(min-width: 1200px)" srcset="./img/catalog/devil-bridge-desktop.jpg 1x, ./img/catalog/devil-bridge-desktop@2x.jpg 2x" width="400" height="267">
-                  <source class="catalog__image" media="(min-width:768px)" srcset="./img/catalog/devil-bridge-tablet.jpg 1x, ./img/catalog/devil-bridge-tablet@2x.jpg 2x" width="324" height="267">
-                  <img class="catalog__image" src="./img/catalog/devil-bridge-mobile.jpg" srcset="./img/catalog/devil-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="#">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/devil-bridge-desktop.webp 1x, img/catalog/devil-bridge-desktop@2x.webp 2x" loading="lazy" width="400" height="267">
+                  <source class="catalog__image" type="image/webp" media="(min-width: 768px)" srcset="img/catalog/devil-bridge-tablet.webp 1x, img/catalog/devil-bridge-tablet@2x.webp 2x" loading="lazy" width="324" height="267">
+                  <source class="catalog__image" type="image/webp" srcset="img/catalog/devil-bridge-mobile.webp 1x, img/catalog/devil-bridge-mobile@2x.webp 2x" loading="lazy" width="280" height="280">
+                  <source class="catalog__image" media="(min-width: 1200px)" srcset="img/catalog/devil-bridge-desktop.jpg 1x, img/catalog/devil-bridge-desktop@2x.jpg 2x" width="400" height="267">
+                  <source class="catalog__image" media="(min-width:768px)" srcset="img/catalog/devil-bridge-tablet.jpg 1x, img/catalog/devil-bridge-tablet@2x.jpg 2x" width="324" height="267">
+                  <img class="catalog__image" src="img/catalog/devil-bridge-mobile.jpg" srcset="img/catalog/devil-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="#">
                 </picture>
               </a>
               <div class="catalog__credits">
@@ -158,55 +167,52 @@
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <picture>
-            <source class="video__img" media="(min-width: 1200px)" srcset="./img/catalog/video-pic-desktop.jpg 1x, ./img/catalog/video-pic-desktop@2x.jpg 2x" width="800" height="500">
-            <source class="video__img" media="(min-width:768px)" srcset="./img/catalog/video-pic-tablet.jpg 1x, ./img/catalog/video-pic-tablet@2x.jpg 2x" width="648" height="500">
-            <img class="video__img" src="./img/catalog/video-pic-mobile.jpg" srcset="./img/catalog/video-pic-mobile@2x.jpg 2x" width="280" height="177" alt="#">
+            <source class="video__img" type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/video-pic-desktop.webp 1x, img/catalog/video-pic-desktop@2x.webp 2x" loading="lazy" width="800" height="500">
+            <source class="video__img" type="image/webp" media="(min-width: 768px)" srcset="img/catalog/video-pic-tablet.webp 1x, img/catalog/video-pic-tablet@2x.webp 2x" loading="lazy" width="648" height="500">
+            <source class="video__img" type="image/webp" srcset="img/catalog/video-pic-mobile.webp 1x, img/catalog/video-pic-mobile@2x.webp 2x" loading="lazy" width="280" height="177">
+            <source class="video__img" media="(min-width: 1200px)" srcset="img/catalog/video-pic-desktop.jpg 1x, img/catalog/video-pic-desktop@2x.jpg 2x" loading="lazy" width="800" height="500">
+            <source class="video__img" media="(min-width:768px)" srcset="img/catalog/video-pic-tablet.jpg 1x, img/catalog/video-pic-tablet@2x.jpg 2x" loading="lazy" width="648" height="500">
+            <img class="video__img" src="img/catalog/video-pic-mobile.jpg" srcset="img/catalog/video-pic-mobile@2x.jpg 2x" loading="lazy" width="280" height="177" alt="#">
           </picture>
         </section>
       </main>
 
       <footer class="footer">
-        <p class="footer__hashtag">
-          <a class="footer__link" href="#">&#35;VisitSedona</a>
-        </p>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы во ВКонтакте</span>
-                <svg class="social__link-logo" width="24" height="24">
-                  <use xlink:href="#logo-vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span>
-                <svg class="social__link-logo" width="24" height="24">
-                  <use xlink:href="#logo-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы в Youtube</span>
-                <svg class="social__link-logo" width="24" height="24">
-                  <use xlink:href="#logo-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            Разработано
-            <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href="#logo-htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
+        <a class="footer__hashtag" href="#">&#35;VisitSedona</a>
+        <ul class="footer__list footer__list--catalog">
+          <li class="footer__item">
+            <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы во ВКонтакте</span>
+              <svg class="footer__link-logo" width="24" height="24">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span>
+              <svg class="footer__link-logo" width="24" height="24">
+                <use xlink:href="img/sprite.svg#telegram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Youtube</span>
+              <svg class="footer__link-logo" width="24" height="24">
+                <use xlink:href="img/sprite.svg#youtube-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <svg class="footer__copyright-logo" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
       </footer>
     </div>
-  <script src="./js/script.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>

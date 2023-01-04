@@ -1,11 +1,18 @@
 .modal-container {
-  // display: none;
-  // position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+  &:not(.active) {
+    display: none;
+  }
 }
 
 .modal__content {
@@ -20,11 +27,11 @@
 
     @media (min-width: @tablet-width) {
       width: 307px;
-      padding: 50px 47px 35px 46px;
+      padding: 50px 47px 49px 46px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 48px, 47px, 35px, 46px;
+      padding: 48px 47px 49px 46px;
     }
   }
 
@@ -32,20 +39,27 @@
     width: 320px;
 
     @media (min-width: @tablet-width) {
-      width: 444px;
-      padding: 58px 99px 35px 97px;
+      width: 640px;
     }
   }
 }
 
 .modal__wrapper {
   &--success {
-    padding: 45px 45px 46px 45px;
+    padding: 39px 50px 51px 46px;
+
+    @media (min-width: @tablet-width) {
+      padding: 45px 50px 51px 46px;
+    }
   }
 
   &--button {
     background-color: #f2f2f2;
     padding: 20px;
+
+    @media (min-width: @tablet-width) {
+      padding: 44px 91px;
+    }
   }
 }
 
@@ -53,12 +67,27 @@
   .title();
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   &--failure {
     padding-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 43px;
+      padding-right: 45px;
+      padding-bottom: 22px;
+    }
   }
 
   &--success {
-    padding-bottom: 24px;
+    padding-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 23px;
+    }
   }
 }
 
@@ -69,6 +98,10 @@
   &--failure {
     margin: 0 auto;
     padding-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 47px;
+    }
   }
 
   &--success {
@@ -77,25 +110,33 @@
 }
 
 .button {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-
   &--modal-failure {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
     width: 76%;
     padding-top: 18px;
     padding-bottom: 14px;
+
+    @media (min-width: @tablet-width) {
+      width: 89%;
+      font-size: 21px;
+    }
   }
 
   &--modal-success {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
     width: 100%;
     padding-top: 18px;
     padding-right: 56px;
     padding-bottom: 14px;
     padding-left: 54px;
     margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 }
