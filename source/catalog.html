@@ -70,7 +70,7 @@
                   <p class="catalog__credits-author">Автор фото: Борис</p>
                 </div>
                 <div class="catalog__credits-like">
-                  <button class="button catalog__credits-button" type="button" aria-label="Поставить лайк">
+                  <button class="button catalog__credits-button" type="button" role="img" aria-label="Поставить лайк">
                     <svg width="30" height="27" aria-hidden="true" focusable="false">
                       <use xlink:href="img/sprite.svg#like-icon"></use>
                     </svg>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="catalog__credits-like catalog__credits-like--small">
                   <button class="button catalog__credits-button" type="button" aria-label="Поставить лайк">
-                    <svg width="30" height="27" aria-hidden="true" focusable="false">
+                    <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
                       <use xlink:href="img/sprite.svg#like-icon"></use>
                     </svg>
                   </button>
@@ -125,7 +125,7 @@
                 </div>
                 <div class="catalog__credits-like catalog__credits-like--small">
                   <button class="button catalog__credits-button" type="button" aria-label="Поставить лайк">
-                    <svg width="30" height="27" aria-hidden="true" focusable="false">
+                    <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
                       <use xlink:href="img/sprite.svg#like-icon"></use>
                     </svg>
                   </button>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="catalog__credits-like catalog__credits-like--small">
                   <button class="button catalog__credits-button" type="button" aria-label="Поставить лайк">
-                    <svg width="30" height="27" aria-hidden="true" focusable="false">
+                    <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
                       <use xlink:href="img/sprite.svg#like-icon"></use>
                     </svg>
                   </button>
@@ -166,14 +166,13 @@
         <section class="video">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <picture>
-            <source class="video__img" type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/video-pic-desktop.webp 1x, img/catalog/video-pic-desktop@2x.webp 2x" loading="lazy" width="800" height="500">
-            <source class="video__img" type="image/webp" media="(min-width: 768px)" srcset="img/catalog/video-pic-tablet.webp 1x, img/catalog/video-pic-tablet@2x.webp 2x" loading="lazy" width="648" height="500">
-            <source class="video__img" type="image/webp" srcset="img/catalog/video-pic-mobile.webp 1x, img/catalog/video-pic-mobile@2x.webp 2x" loading="lazy" width="280" height="177">
-            <source class="video__img" media="(min-width: 1200px)" srcset="img/catalog/video-pic-desktop.jpg 1x, img/catalog/video-pic-desktop@2x.jpg 2x" loading="lazy" width="800" height="500">
-            <source class="video__img" media="(min-width:768px)" srcset="img/catalog/video-pic-tablet.jpg 1x, img/catalog/video-pic-tablet@2x.jpg 2x" loading="lazy" width="648" height="500">
-            <img class="video__img" src="img/catalog/video-pic-mobile.jpg" srcset="img/catalog/video-pic-mobile@2x.jpg 2x" loading="lazy" width="280" height="177" alt="#">
-          </picture>
+
+          <div class="video__container">
+            <button class="video__container-button">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
+            <video class="video__container-video" width="280" height="177" poster="img/catalog/video-pic-desktop@2x.jpg"></video>
+          </div>
         </section>
       </main>
 
@@ -183,7 +182,7 @@
           <li class="footer__item">
             <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы во ВКонтакте</span>
-              <svg class="footer__link-logo" width="24" height="24">
+              <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
                 <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
             </a>
@@ -191,7 +190,7 @@
           <li class="footer__item">
             <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
-              <svg class="footer__link-logo" width="24" height="24">
+              <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
                 <use xlink:href="img/sprite.svg#telegram-icon"></use>
               </svg>
             </a>
@@ -199,7 +198,7 @@
           <li class="footer__item">
             <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Youtube</span>
-              <svg class="footer__link-logo" width="24" height="24">
+              <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
                 <use xlink:href="img/sprite.svg#youtube-icon"></use>
               </svg>
             </a>
@@ -207,7 +206,7 @@
         </ul>
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg class="footer__copyright-logo" width="27" height="34">
+          <svg class="footer__copyright-logo" aria-hidden="true" role="img" focusable="false" width="27" height="34">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
