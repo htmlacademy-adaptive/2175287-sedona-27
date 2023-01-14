@@ -279,7 +279,8 @@
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: #d5d5d5;
   }
 }
@@ -288,7 +289,7 @@
   border-radius: 4px;
 }
 
-.form__control-group:active .control__input[type="checkbox"]:checked + .form__control-mark::before {
+.form__control-group:active .form__control-input[type="checkbox"]:checked + .form__control-mark::before {
   opacity: 0.3;
 }
 
@@ -361,10 +362,11 @@
     padding-top: 17px;
     padding-left: 98px;
     padding-right: 95px;
+    padding-bottom: 91px;
   }
 }
 
-.button--form {
+.form__button {
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -401,5 +403,35 @@
     font-size: 14px;
     padding-top: 23px;
     float: right;
+  }
+}
+
+.form__comment {
+  width: 248px;
+  height: 118px;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 17px;
+  border: none;
+  outline: none;
+  margin-left: 18px;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0 auto;
+    width: 616px;
+    height: 128px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 736px;
   }
 }
