@@ -14,9 +14,13 @@
     background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-mobile@2x.jpg");
   }
 
+  @media (max-width: @mobile-width-only) {
+    margin-top: 56px;
+  }
+
   @media (min-width: @tablet-width) {
     background-size: 156%, cover;
-    background-position: bottom, center;
+    background-position: bottom;
     padding: 77px 154px 91px;
     background-image: url("../img/intro-triangle.svg"), url("../img/hero-banner/back-tablet.jpg");
 

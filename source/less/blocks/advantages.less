@@ -11,7 +11,7 @@
   padding: 70px 18px 40px;
 
   @media (min-width: @tablet-width) {
-    padding: 42px 33px;
+    padding: 53px 33px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,7 +25,7 @@
   @media (min-width: @tablet-width) {
     order: 2;
     grid-column: 3 / -1;
-    padding: 42px 33px;
+    padding: 53px 33px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -82,18 +82,22 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 52px 50px;
+      padding: 63px 50px 40px;
     }
   }
 
   &--four {
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
       padding-top: 42px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 52px;
     }
   }
 
   &--five {
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
       padding-left: 30px;
       padding-right: 30px;
     }
@@ -103,11 +107,11 @@
     @media (min-width: @tablet-width) {
       background-image: url("/img/house-icon.svg");
       background-repeat: no-repeat;
-      background-position: 87px 51px;
+      background-position: 87px 55px;
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 157px 66px;
+      background-position: 159px 65px;
     }
   }
 
@@ -115,11 +119,11 @@
     @media (min-width: @tablet-width) {
       background-image: url("/img/burger-icon.svg");
       background-repeat: no-repeat;
-      background-position: 78px 51px;
+      background-position: 78px 54px;
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 149px 53px;
+      background-position: 150px 65px;
     }
   }
 
@@ -131,7 +135,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 131px 50px;
+      background-position: 131px 64px;
       background-size: 98px 81px;
     }
   }
@@ -189,7 +193,7 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 12px;
     font-size: 21px;
-    line-height: 1.24;
+    line-height: 26px;
   }
 
   &--variant {
