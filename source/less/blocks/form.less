@@ -289,6 +289,10 @@
   border-radius: 4px;
 }
 
+.form__control-input:focus + .form__control-mark {
+  background-color: #d5d5d5;
+}
+
 .form__control-group:active .form__control-input[type="checkbox"]:checked + .form__control-mark::before {
   opacity: 0.3;
 }
@@ -326,7 +330,6 @@
 .form__control-group:active .form__control-input[type="radio"]:checked + .form__control-mark::before {
   opacity: 0.3;
 }
-
 
 .form__control-input[type="radio"]:checked {
   & + .form__control-mark::before {
